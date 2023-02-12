@@ -1,0 +1,56 @@
+<%-include('header')-%>
+<center>
+  <div class="transfer">
+    <div>
+    <div
+      class="card w-75 enter  h-25 my-5 shadow-lg border border-1 border-dark" style="background-color: #D7CDFE;"
+    >
+      <form action="/user_info" method="post">
+        <div class="mb-3 w-50 m-5">
+          <label for="exampleFormControlInput1" class="form-label fw-bold"
+            >sender's email address</label
+          >
+          <input
+            type="email"
+            class="enter form-control shadow-sm"
+            name="senderEmail"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3 w-50 m-2">
+          <label for="exampleFormControlInput1" class="form-label fw-bold"
+            >reciver's email address</label
+          >
+          <input
+            type="email"
+            class="enter form-control shadow-sm"
+            name="reciverEmail"
+            id="exampleFormControlInput1"
+            placeholder="name@example.com"
+          />
+        </div>
+        <div class="mb-3 w-50 m-2">
+          <label for="exampleFormControlInput1" class="form-label fw-bold"
+            >Transfer money</label
+          >
+          <input
+            type="input"
+            class="enter form-control shadow-sm"
+            name="amount"
+            id="exampleFormControlInput1"
+            placeholder="Enter amount"
+          />
+        </div>
+        <button
+          type="submit"
+          class="btn btn-outline-dark shadow mb-5"
+          id="validationServerUsername"
+        >
+          <i class="fa-duotone fa-money-bill-transfer">Transfer</i>
+        </button>
+      </form>
+    </div>
+    
+  </div>
+</center>

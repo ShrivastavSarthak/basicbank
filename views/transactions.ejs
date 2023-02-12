@@ -1,0 +1,36 @@
+<%-include("header")-%>
+
+<center>
+    <h1 class="mt-5" style="font-family: 'Times New Roman', Times, serif;">Transaction history</h1>
+    <table class="my-5 w-75  table-hover shadow-lg table table-striped border border-1 border-dark" style="background-color: #D7CDFE;">
+        <thead>
+            <tr>
+              <th scope="col">Sender's Email</th>
+              <th scope="col">Reciver's email</th>
+              <th scope="col">Balance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                
+                <td>
+                    <% for(let i=0; i<newTransaction.length ;i++){ %>
+                        <p><%= newTransaction[i].Semail%></p>
+                        <%}%>
+                </td>
+                <td>
+                    <% for(let i=0; i<newTransaction.length ; i++){ %>
+                        <p><%= newTransaction[i].Remail %></p>
+                        <%}%>
+                </td>
+                <td>
+                    <% for(let i=0; i<newTransaction.length ; i++){ %>
+                        <p><%= newTransaction[i].amount %></p>
+                        <%}%>
+                </td>
+            </tr>
+          </tbody>
+    </table>
+
+</center>
+

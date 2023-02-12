@@ -1,0 +1,36 @@
+
+.background{background-color: #E4D3FC;
+    background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+    width: auto;
+    height: auto;
+}
+
+
+
+.main{
+    font-size:xx-large;
+    font-style: italic;
+    font-weight: bolder;
+    font-family:cursive ;
+}
+
+
+
+.enter:hover{
+    background-color: #CAC7FF;
+}
+.colorChange:hover{
+    text-decoration-color: #CAC7FF;
+}
+
+.tbackground{
+    background-image: url("./images/transaction.jpg");
+   
+}
+
+.profile{
+    max-width: 250px;
+    max-height: 250px;
+    min-width: 100px;
+    min-height: 100px;
+}

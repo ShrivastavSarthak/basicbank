@@ -1,0 +1,60 @@
+<%-include('header')-%>
+
+<center >
+  <div >
+    <h1 class="mt-5" style="font-family: 'Times New Roman', Times, serif;">List of the customers</h1>
+    <section >
+  <table class=" mt-5 w-75  table table-hover shadow-lg rounded border border-2 table-striped border border-1 border-dark" style="background-color: #D7CDFE;">
+    <thead class="rounded">
+      <tr>
+        <th scope="col">Email</th>
+        <th scope="col">Name</th>
+        <th scope="col">Balance</th>
+      </tr>
+    </thead>
+
+      <tbody>
+        <tr>
+          
+          <td>
+          <%for(let i=0;i<newUsers.length ; i++){%>
+            <p class="mt-4 "><a href="viewpage/<%=newUsers[i]._id%>" class="colorChange link-dark" ><%= newUsers[i].email%></a> </p>
+            <%}%>
+          </td>
+          <td>
+            <%for(let i=0;i<newUsers.length ; i++){%>
+              <p class="mt-4"><%= newUsers[i].name%></p>
+              <%}%>
+          </td>
+          <td>
+            <%for(let i=0;i<newUsers.length ; i++){%>
+              <p class="mt-4"><%= newUsers[i].Balance%></p>
+              <%}%>
+
+          </td>
+
+        </tr>
+        
+      </tbody>
+    
+  </table>
+</section>
+  </div>
+  <div class="row">
+    <div class="col mb-3 w-50 m-3"> 
+      <div class="mb-3">
+        <a class="btn btn-outline-dark btn-lg rounded-pill shadow-lg" href="transaction_info" role="button">View transactions</a>
+      </div>
+    </div>
+    <div class="col mb-3 w-50 m-3"> 
+      <div class="mb-3">
+        <a class="btn btn-outline-dark btn-lg rounded-pill shadow-lg " href="user_info" role="button">Transfer money</a>
+      </div>
+    </div>
+  
+  </div>
+  
+</center>
+
+
+
