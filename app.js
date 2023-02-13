@@ -5,6 +5,7 @@ const mongoose = require('mongoose');
 const ejs = require('ejs');
 const { response } = require('express');
 const app = express();
+const PORT =process.env.PORT || 3000;
 
 app.set('view engine', "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -130,6 +131,6 @@ app.post("/user_info", (req, res) => {
         }
     })
 })
-app.listen(3000, (res, req) => {
+app.listen(PORT, (res, req) => {
     console.log("server listening on port 3000");
 })
