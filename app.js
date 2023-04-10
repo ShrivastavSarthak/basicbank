@@ -12,9 +12,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static("public"))
 
-const db = mongoose.createConnection("mongodb+srv://sarthak:1234@bankserver.xltblty.mongodb.net/User", { useNewUrlParser: true })
+const db = mongoose.createConnection("use your DatabaseUrl", { useNewUrlParser: true })
 
-const Tdb= mongoose.createConnection("mongodb+srv://sarthak:1234@bankserver.xltblty.mongodb.net/transactions", { useNewUrlParser: true})
+const Tdb= mongoose.createConnection("use your TdbUrl", { useNewUrlParser: true})
 
 const User = db.model("User", new mongoose.Schema({
     name: String,
